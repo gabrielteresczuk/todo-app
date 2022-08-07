@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Frontend Mentor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Desafio - Rock, Paper, Scissors game
 
-## Available Scripts
+![Todo app](./public/desktop-preview.jpg)
 
-In the project directory, you can run:
+Esta es la solucion para [Todo app](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges te ayuda a mejorar tus habilidades en el Frontend.
 
-### `npm start`
+## Table of contents ✨
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Vision General](#vision-general-📑)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Desafio](#desafio-🏅)
 
-### `npm test`
+- [Links](#links-🔗)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Proceso](#proceso-🔨)
 
-### `npm run build`
+- [Proyecto](#proyecto-🌍)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Que aprendi](#que-aprendi-💡)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Recursos utiles](#recursos-utiles-🔔)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Autor](#autor-😎)
 
-### `npm run eject`
+## Vision General 📑
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Desafio 🏅
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El Usuario deberia ser capaz de:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Ver el diseño de manera optioma en ambas pantallas, escritorio y mobil.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Ver todos los movimientos interactivos sobre los botones
 
-## Learn More
+- Cambios de temas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Poder arrastrar los items y reordenarlos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Guardar en local storage los datos cargados
 
-### Code Splitting
+### Links 🔗
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- URL de la solucion: [Github](https://github.com/gabrielteresczuk/todo-app) 📌
 
-### Analyzing the Bundle Size
+- URL del Sitio en Vivo: [Demo](https://gabrielteresczuk.github.io/todo-app/) 👀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Proceso 🔨
 
-### Making a Progressive Web App
+### Proyecto 🌍
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Etiquetas semanticas de HTML 5
 
-### Advanced Configuration
+- Propiedades CSS propias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Flexbox
 
-### Deployment
+- CSS Grid
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- React Js
 
-### `npm run build` fails to minify
+### Que aprendi 💡
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Uso de Linear Gradient
+
+```css
+background: linear-gradient(135deg, #57ddff 0%, #c058f3 100%);
+```
+
+Linear gradient en TEXTOS
+
+```css
+.filters__color{
+    background: -webkit-linear-gradient(45deg,#57ddff, #c058f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+```
+
+Editar otros elemntos al hacer hover
+
+```css
+.item__cont:hover .item__cross{
+    display:block;
+}
+```
+
+comentar mejor el codigo con
+
+```css
+/*------------- COMENT --------------*/
+```
+
+Uso de Drag and Drop con
+
+```js
+<div className='item__cont' 
+draggable 
+onDragStart={()=>handleDragStart(index)} 
+onDragEnter={()=>handleDragEnter(index)} 
+onDragEnd={handleDragEnd}>
+```
+
+### Recursos Utiles 🔔
+
+- [w3schools](https://www.w3schools.com/css/) - Esta pagina es escencial para aprender lo basico de CSS.
+
+- [Mdn Mozilla developer Network](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout) - MDN es el sitio de documentacion STANDART.
+
+## Autor 😎
+
+- Portfolio - [Portfolio](https://gabrielteresczuk.github.io/portfolio2/)
+
+- Frontend Mentor - [@gabrielteresczuk](https://www.frontendmentor.io/profile/gabrielteresczuk)
+
+- Linkedin - [in/gabriel-teresczuk](https://www.linkedin.com/in/gabriel-teresczuk/)
