@@ -1,6 +1,6 @@
 # Frontend Mentor
 
-### Desafio - Rock, Paper, Scissors game
+### Desafio - Todo app
 
 ![Todo app](./public/desktop-preview.jpg)
 
