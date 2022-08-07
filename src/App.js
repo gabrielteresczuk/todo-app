@@ -69,7 +69,7 @@ localStorage.setItem("todos", JSON.stringify(data));
 
   const handleTheme = () =>{
     setTheme(!theme);
-    localStorage.setItem("darkTheme", JSON.stringify(theme));
+    localStorage.setItem("darkTheme", JSON.stringify(!theme));
   }
 
 /* ------------- Methods ------------ */
