@@ -7,7 +7,7 @@ import bg from './images/bg-desktop-light.jpg'
 import bgdark from './images/bg-desktop-dark.jpg'
 
 let DataBase =JSON.parse(localStorage.getItem("todos")) || [];
-let darkTheme = JSON.parse(localStorage.getItem("darkTheme")) || 'false';
+let darkTheme = JSON.parse(localStorage.getItem("darkTheme")) || false;
 
 /*
 {
@@ -68,8 +68,9 @@ localStorage.setItem("todos", JSON.stringify(data));
   }
 
   const handleTheme = () =>{
-    setTheme(!theme);
     localStorage.setItem("darkTheme", JSON.stringify(!theme));
+    setTheme(!theme);
+    
   }
 
 /* ------------- Methods ------------ */
